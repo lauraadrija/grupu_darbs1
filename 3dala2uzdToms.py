@@ -50,3 +50,8 @@ stundas2 = int(input("Ievadiet otrā priekšmeta stundu skaitu: "))
 sakumskolas_skolotajs = SakumskolasSkolotajs(uzvards_sak, klase, stundas_sak)
 vidusskolas_skolotajs = VidusskolasSkolotajs(
     uzvards_vid, prieksmets1, stundas1, prieksmets2, stundas2)
+
+# izvade 
+print()
+sakumskolas_skolotajs.izdrukat()
+vidusskolas_skolotajs.izdrukat()
