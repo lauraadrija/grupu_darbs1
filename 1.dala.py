@@ -45,7 +45,7 @@ conn.close()
 
 import sqlite3
 
-# Ievietoju datus tabulā
+# Pievienojos datubāzei, lai atlasītu datus, kas jāizvada
 conn = sqlite3.connect('kafejnica.db')
 cursor = conn.cursor()
 
@@ -86,8 +86,10 @@ JOIN Employees e ON c.id = e.cafe_id
 JOIN Orders o ON e.id = o.employees_id
 GROUP BY c.id;
 """
+#svītriņas
 print("-" * 30)
 
+#IZVADU ATLASĪTOS DATUS
 # 2.1. Darbinieki, kas pašlaik ir atvaļinājumā
 cursor.execute("SELECT first_name, last_name FROM Employees WHERE on_vacation = 1;")
 print("2.1. Darbinieki atvaļinājumā:", cursor.fetchall())
@@ -124,5 +126,6 @@ cursor.execute("""
 """)
 print("2.5. Kafejnīcu pasūtījumu vidējās summas:", cursor.fetchall())
 
+#svītriņas
 print("-" * 30)
 conn.close()
