@@ -1,3 +1,3 @@
-Toms - 3. daļa, 2. uzdevums
+PABEIGTS: Toms - 3. daļa, 2. uzdevums
 PABEIGTS: Laura - 1. daļa, 1., 2. uzdevums (links uz sql datubāzes skici: https://drawsql.app/teams/programmesana-26/diagrams/kafejnicutiklssql)
-Kristjans/Kevins - 4. daļa, 1., 2. uzdevums
+Pabeigts: Kristjans/Kevins - 4. daļa, 1., 2. uzdevums
