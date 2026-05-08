@@ -4,7 +4,7 @@ import sqlite3
 conn = sqlite3.connect('kafejnica.db')
 cursor = conn.cursor()
 
-# SQL skripts kā viena liela teksta virkne
+# SQL tabulas izveide
 sql_script = """
 CREATE TABLE IF NOT EXISTS Cafe (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -37,17 +37,15 @@ INSERT INTO Employees (first_name, last_name, number, position, on_vacation, caf
 INSERT INTO Orders (order_sum, order_date, description, employees_id) VALUES (249.99, '2024-04-01', 'Produkti atvēršanai', 1), (15.50, '2024-04-02', 'Kafijas pupiņas', 2), (50.00, '2024-04-03', 'Saimniecības preces', 3);
 """
 
-# Izpildām skriptu
 cursor.executescript(sql_script)
 conn.commit()
 print("Datubāze veiksmīgi izveidota un dati ievadīti!")
 
-# Aizveram savienojumu
 conn.close()
 
 import sqlite3
 
-# Atveram savienojumu (piemērs)
+# Ievietoju datus tabulā
 conn = sqlite3.connect('kafejnica.db')
 cursor = conn.cursor()
 
